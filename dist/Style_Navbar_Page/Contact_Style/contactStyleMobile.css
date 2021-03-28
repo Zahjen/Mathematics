@@ -1,0 +1,197 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #001428;
+}
+body .logo {
+  color: #DF9F1F;
+}
+body .logo .logoOrange {
+  display: block;
+}
+body .logo .logoBleu {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px 15px;
+  font-size: 13px;
+}
+main .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+main .container .socialNetwork {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+main .container .socialNetwork h1 {
+  font-size: 25px;
+}
+main .container .socialNetwork h1, main .container .socialNetwork h2 {
+  color: #DAF3FF;
+}
+main .container .socialNetwork h2 {
+  font-size: 20px;
+  margin: 0;
+}
+main .container .socialNetwork .touch {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+main .container .socialNetwork .touch .adress, main .container .socialNetwork .touch .email {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .container .socialNetwork .touch .adress .material-icons, main .container .socialNetwork .touch .email .material-icons {
+  font-size: 25px;
+  margin-right: 15px;
+}
+main .container .socialNetwork .touch .adress {
+  margin-bottom: 15px;
+}
+main .container .socialNetwork .icon {
+  width: 100%;
+  height: 100%;
+}
+main .container .socialNetwork .icon .image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0 15px 0;
+}
+main .container .socialNetwork .icon .image img {
+  width: 25px;
+  height: auto;
+}
+main .container .socialNetwork .icon .image img:nth-child(1), main .container .socialNetwork .icon .image img:nth-child(2), main .container .socialNetwork .icon .image img:nth-child(3) {
+  margin-right: 20px;
+}
+main .container .contactForm {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 4%);
+  padding: 50px 12px 12px 12px;
+  background-color: white;
+  color: #001428;
+}
+main .container .contactForm h1 {
+  color: #001428;
+  font-size: 20px;
+}
+main .container .contactForm form {
+  width: 100%;
+  height: 100%;
+}
+main .container .contactForm form .ident {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .contactForm form .ident .nom {
+  margin-right: 10px;
+}
+main .container .contactForm form .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+main .container .contactForm form label {
+  margin-bottom: 5px;
+}
+main .container .contactForm form input {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  width: 100%;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  padding: 8px 15px;
+  outline: none;
+  border: 1px solid #001428;
+  background-color: #2b7270bd;
+  font-size: 13px;
+  color: white;
+}
+main .container .contactForm form input::placeholder {
+  color: transparent;
+}
+main .container .contactForm form textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 8px 15px;
+  outline: none;
+  border: 1px solid #001428;
+  background-color: #2b7270bd;
+  font-size: 13px;
+  color: white;
+}
+main .container .contactForm form .submit {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  background-color: transparent;
+  border: 2px solid #001428;
+  color: #001428;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+}
+main .container .contactForm form .submit:hover {
+  background-color: #001428;
+  color: white;
+}
+
+@media screen and (max-width: 350px) {
+  main .container .socialNetwork h1 {
+    font-size: 23px;
+  }
+}
+
+/*# sourceMappingURL=contactStyleMobile.css.map */

@@ -1,0 +1,21 @@
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  padding: 20px 0;
+  font-size: 20px;
+}
+nav .logo {
+  font-size: 18px;
+  margin-left: 40px;
+}
+nav .logo .material-icons {
+  margin-right: 30px;
+  color: #DAF3FF;
+}
+nav .navLinks a {
+  margin-right: 40px;
+}
+
+/*# sourceMappingURL=navBarLaptop.css.map */

@@ -1,0 +1,92 @@
+@use "../variable/padding";
+@use "../variable/colors";
+@use "../variable/cardPadding";
+@use "../variable/button";
+@use "../variable/mixins";
+
+header {
+    .textContainer {
+        padding: 0 padding.$LRlaptop;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .description {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+    }
+}
+
+main {
+    padding: 90px padding.$LRlaptop;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .line {
+        margin-bottom: 40px;
+
+        .firstLine {
+            @include mixins.widthAndHeight(25%, auto);
+        }
+    
+        .secondLine {
+            @include mixins.widthAndHeight(12%, auto);
+        }
+    }
+
+    .newsContent {
+
+        h3 {
+            font-size: 25px;
+        }
+
+        .cardContainer {
+            margin: 20px 0 40px 0;
+
+            .card {
+                @include mixins.widthAndHeight(33.33%, 550px);
+
+                .title {
+                    padding: cardPadding.$TBlaptop cardPadding.$LRlaptop 30px cardPadding.$LRlaptop;
+                    font-size: 19px;
+                }
+
+                .contentCourses {
+                    padding: cardPadding.$TBlaptop cardPadding.$LRlaptop;
+                    font-size: 16px;
+
+                    li {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 50px padding.$LRlaptop 100px padding.$LRlaptop;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .line {
+        .firstLine {
+            @include mixins.widthAndHeight(25%, auto);
+        }
+    
+        .secondLine {
+            @include mixins.widthAndHeight(12%, auto);
+        }
+    }
+
+    .icon img {
+        @include mixins.widthAndHeight(50px, auto);
+    }
+}

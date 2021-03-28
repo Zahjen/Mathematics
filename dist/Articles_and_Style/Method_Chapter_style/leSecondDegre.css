@@ -1,0 +1,145 @@
+main h2 {
+  margin-right: 50px;
+}
+main h4 {
+  color: #CACDD2 !important;
+  margin: 30px 0;
+}
+main .noMarginExample {
+  margin: 0 0 30px 0;
+}
+main .delta {
+  margin-left: 40px;
+}
+main .listLowerRomType {
+  margin-left: 25px;
+}
+main .listLowerRomType > ul {
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+  main h2 {
+    margin-right: 50px;
+  }
+  main h4 {
+    margin: 25px 0;
+  }
+  main .noMarginExample {
+    margin: 0 0 25px 0;
+  }
+  main .delta {
+    margin-left: 20px;
+  }
+  main .listLowerRomType {
+    margin-left: 15px;
+  }
+  main .listLowerRomType > ul {
+    margin-left: 25px;
+  }
+  main .DeltaPosPart1 {
+    width: 238px;
+  }
+  main .DeltaNulPart1 {
+    width: 345px;
+  }
+  main .DeltaNegPart1 {
+    width: 174px;
+  }
+}
+@media screen and (min-width: 551px) and (max-width: 900px) {
+  main h2 {
+    margin-right: 50px;
+  }
+  main h4 {
+    margin: 20px 0;
+  }
+  main .noMarginExample {
+    margin: 0 0 20px 0;
+  }
+  main .delta {
+    margin-left: 15px;
+  }
+  main .listLowerRomType {
+    margin-left: 10px;
+  }
+  main .listLowerRomType > ul {
+    margin-left: 15px;
+  }
+  main .DeltaPosPart1 {
+    width: 226px;
+  }
+  main .DeltaNulPart1 {
+    width: 328px;
+  }
+  main .DeltaNegPart1 {
+    width: 165px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 550px) {
+  main h2 {
+    margin-right: 30px;
+  }
+  main h4 {
+    margin: 15px 0;
+  }
+  main .noMarginExample {
+    margin: 0 0 15px 0;
+  }
+  main .delta {
+    margin-left: 0;
+  }
+  main .listLowerRomType {
+    margin-left: 0px;
+  }
+  main .listLowerRomType > ul {
+    margin-left: 10px;
+  }
+  main .DeltaPosPart1 {
+    width: 184px;
+  }
+  main .DeltaNulPart1 {
+    width: 267px;
+  }
+  main .DeltaNegPart1 {
+    width: 135px;
+  }
+  main .intro {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main h2 {
+    margin-right: 30px;
+  }
+  main h4 {
+    margin: 15px 0;
+  }
+  main .noMarginExample {
+    margin: 0 0 15px 0;
+  }
+  main .delta {
+    margin-left: 0;
+  }
+  main .listLowerRomType {
+    margin-left: 0px;
+  }
+  main .listLowerRomType > ul {
+    margin-left: 8px;
+    line-height: 1.8;
+  }
+  main .DeltaPosPart1 {
+    width: 173px;
+  }
+  main .DeltaNulPart1 {
+    width: 250px;
+  }
+  main .DeltaNegPart1 {
+    width: 126px;
+  }
+  main .intro {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=leSecondDegre.css.map */

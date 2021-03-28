@@ -1,0 +1,94 @@
+@use "../variable/colors";
+@use "../variable/padding";
+@use "../variable/mixins";
+
+main {
+    color: colors.$lightGray;
+    padding: padding.$TBdesktop padding.$LRdesktop;
+    line-height: 2.3; 
+    font-size: 22px;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: colors.$lightBlue;
+        text-align: left;
+        pointer-events: none;
+    }
+
+    hr {
+        border-color: colors.$orange;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 27px;
+    }
+
+    .displayPart {
+        @include mixins.flex(row, space-between, center);
+
+        .material-icons {
+            color: colors.$lightBlue;
+            pointer-events: none;
+            font-size: 60px;
+        }
+
+        .down {
+            @include mixins.transition(transform, 0.3s, ease);
+        }
+    }
+
+    .minipage {
+        @include mixins.widthAndHeight(100%, auto);
+        @include mixins.flex(row, space-around, center);
+        flex-wrap: wrap;
+        margin: 40px 0;
+
+        figcaption {
+            text-align: center;
+        }
+    }
+
+    .listDecimalType {
+        @include mixins.listStyle(decimal, inside, 25px);
+    }
+
+    .listLowerRomType {
+        @include mixins.listStyle(lower-roman, inside, 20px);
+    }
+
+    .Theorie {
+        @include mixins.borderRadius(30px);
+        background-color: colors.$darkGray;
+        border: none;
+        padding: 40px 50px 60px 40px;
+    }
+
+    .itemEncadrement {
+        border: solid colors.$lightBlue 1px; 
+        margin: 0 15px;
+    }
+
+    .underlineAnchor {
+        color: colors.$orange;
+        text-decoration: underline;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}

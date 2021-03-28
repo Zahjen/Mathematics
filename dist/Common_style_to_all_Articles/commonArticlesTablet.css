@@ -1,0 +1,38 @@
+main {
+  padding: 15px 35px;
+  line-height: 1.8;
+  /* A voir si le besoin se fait sentir */
+  font-size: 15px;
+}
+main h1 {
+  font-size: 38px;
+}
+main h2 {
+  font-size: 26px;
+}
+main h3 {
+  font-size: 23px;
+}
+main h4 {
+  font-size: 18px;
+}
+main .Theorie {
+  padding: 28px 20px;
+}
+main .desktop {
+  display: none;
+}
+main .mobile {
+  display: block;
+}
+main .displayPart .material-icons {
+  font-size: 35px;
+}
+main .minipage {
+  margin: 30px 0;
+}
+main .minipage .var1 {
+  width: 405px;
+}
+
+/*# sourceMappingURL=commonArticlesTablet.css.map */

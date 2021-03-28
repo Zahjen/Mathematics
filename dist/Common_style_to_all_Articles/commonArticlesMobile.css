@@ -1,0 +1,45 @@
+main {
+  padding: 15px 15px;
+  line-height: 2;
+  font-size: 13px;
+}
+main h1 {
+  font-size: 31px;
+}
+main h2 {
+  font-size: 21px;
+}
+main h3 {
+  font-size: 18px;
+}
+main h4 {
+  font-size: 15px;
+}
+main .Theorie {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 18px 12px;
+}
+main .desktop {
+  display: none;
+}
+main .mobile {
+  display: block;
+}
+main .itemEncadrement {
+  margin: 0 5px;
+}
+main .displayPart .material-icons {
+  font-size: 35px;
+}
+main .minipage {
+  margin: 25px 0;
+}
+main .minipage .var1 {
+  width: 295px;
+}
+
+/*# sourceMappingURL=commonArticlesMobile.css.map */

@@ -1,0 +1,27 @@
+.container {
+  padding: 15px 15px;
+}
+.container .card {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+}
+.container .card .title {
+  padding: 14px 15px;
+}
+.container .card .title a {
+  font-size: 17px;
+}
+.container .card .content {
+  padding: 14px 15px;
+}
+.container .card .content .contentList .contentItem {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.container .card .content .readMore {
+  padding: 8px 18px;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=cardStyleMobile.css.map */

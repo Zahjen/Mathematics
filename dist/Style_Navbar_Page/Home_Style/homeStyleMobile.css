@@ -1,0 +1,201 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+header .textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 15px;
+}
+header .textContainer h1 {
+  font-size: 26px;
+}
+header .textContainer .description {
+  font-size: 13px;
+  margin: 15px 0 30px 0;
+  text-align: justify;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+header .imageContent {
+  display: none;
+}
+header .imageMobile {
+  display: block;
+}
+
+main {
+  padding: 60px 15px;
+  clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
+}
+main h2 {
+  font-size: 25px;
+}
+main .line {
+  margin-bottom: 30px;
+}
+main .line .firstLine {
+  width: 30%;
+  height: auto;
+  margin-bottom: 8px;
+}
+main .separateur {
+  margin: 50px 0;
+}
+main .separateur .losange1, main .separateur .losange5 {
+  width: 8px;
+  height: 8px;
+}
+main .separateur .losange2, main .separateur .losange4 {
+  width: 13px;
+  height: 13px;
+}
+main .separateur .losange3 {
+  width: 17px;
+  height: 17px;
+}
+main .newsContent h3 {
+  font-size: 20px;
+}
+main .newsContent .cardContainer {
+  flex-wrap: nowrap;
+  overflow: auto;
+  margin: 12px 0 25px 0;
+  padding-bottom: 10px;
+}
+main .newsContent .cardContainer .card {
+  width: 300px;
+  height: 400px;
+  flex-shrink: 0;
+}
+main .newsContent .cardContainer .card .title {
+  padding: 10px 12px 20px 12px;
+  font-size: 16px;
+}
+main .newsContent .cardContainer .card .contentCourses {
+  margin-top: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+main .newsContent .cardContainer .card .contentCourses li {
+  margin-bottom: 5px;
+}
+main .newsContent .cardContainer .card .contentCourses .readMore {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 8px 18px;
+  margin: 0 auto;
+  text-decoration: none;
+  margin-top: 20px !important;
+}
+main .newsContent .cardContainer .card .contentCourses .readMore:hover {
+  background-color: white;
+  color: #2b7270;
+}
+
+footer {
+  padding: 50px 15px 80px 15px;
+}
+footer h1 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+footer .line {
+  margin-bottom: 40px;
+}
+footer .line .firstLine {
+  width: 30%;
+  height: auto;
+  margin-bottom: 8px;
+}
+footer .icon {
+  width: 200px;
+  height: auto;
+}
+footer .icon img {
+  width: 35px;
+  height: auto;
+}
+
+@media screen and (max-width: 350px) {
+  main {
+    padding: 50px 8px;
+  }
+  main .newsContent .cardContainer .card {
+    width: 264px;
+    height: 390px;
+  }
+  main .newsContent .cardContainer .card .contentCourses .readMore {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 5px 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    margin-top: 20px !important;
+  }
+  main .newsContent .cardContainer .card .contentCourses .readMore:hover {
+    background-color: white;
+    color: #2b7270;
+  }
+
+  footer {
+    padding: 40px 8px 60px 8px;
+  }
+  footer h1 {
+    font-size: 23px;
+    margin-bottom: 8px;
+  }
+  footer .line {
+    margin-bottom: 40px;
+  }
+  footer .line .firstLine {
+    width: 30%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+  footer .icon {
+    width: 150px;
+    height: auto;
+  }
+  footer .icon img {
+    width: 30px;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=homeStyleMobile.css.map */

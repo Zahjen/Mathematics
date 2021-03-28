@@ -1,0 +1,85 @@
+@use "../variable/colors";
+@use "../variable/navPadding";
+@use "../variable/padding";
+@use "../variable/mixins";
+
+* {
+    @include mixins.initialization();
+    scrollbar-width: thin;
+    scrollbar-color: rgb(156, 156, 156) rgba(156, 156, 156, 0.5);
+    /* What follows justify text and allow to break word and then add a - into a words */
+    text-align: justify;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    @include mixins.hyphen(auto);
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        border: 7px solid rgba(156, 156, 156, 0.5);
+    }
+    &::-webkit-scrollbar-thumb {
+        background:  rgb(156, 156, 156);
+        border-radius: 3px;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: colors.$darkBlue;
+    overflow-x: hidden;
+}
+
+
+/* Properties of the nav bar */
+nav {
+    @include mixins.widthAndHeight(100%, auto); 
+    @include mixins.flex(row, space-between, center);
+    padding: navPadding.$TPdesktop 0;
+    font-size: 24px;
+
+    #navCheck, .navButton {
+        display: none;
+    }
+
+    .material-icons {
+        pointer-events: none;
+        font-size: 30px;
+        margin-right: 80px;
+        color: colors.$lightBlue;
+    }
+
+    .logo {
+        @include mixins.flex(row, flex-start, center);
+        color: colors.$orange;
+        font-size: 22px;
+        margin-left: padding.$LRdesktop;
+
+        .completeLogo {
+            margin-left: 2px;
+        }
+    }
+
+    .navLinks {
+        @include mixins.flex(row, space-between, center);
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-right: padding.$LRdesktop;
+            /* Create progress line when hovering */
+                background: linear-gradient(to top, colors.$orange 0%, colors.$orange 7%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                @include mixins.transition(background-size, 0.2s, ease);
+
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
+
+        #currentLink {
+            color: colors.$blueLink;
+        }
+    }
+}

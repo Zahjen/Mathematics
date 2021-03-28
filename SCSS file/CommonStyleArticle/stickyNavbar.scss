@@ -1,0 +1,30 @@
+@use "../variable/colors";
+@use "../variable/padding";
+@use "../variable/mixins";
+
+nav {
+    @include mixins.transition(background-color, 0.6s, ease);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: colors.$darkBlue;
+}
+
+.sticky {
+    background-color: colors.$navBar;
+    padding: 15px 0;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        width: 100%;
+    }
+    .sticky {
+        background-color: colors.$navBar;
+        padding: 20px padding.$LRmobile 20px 0;
+
+        .navLinks {
+            background-color: colors.$navBar;
+        }
+    }
+}

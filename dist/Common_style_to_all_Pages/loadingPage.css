@@ -1,0 +1,96 @@
+.loaderWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #001428;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 25px;
+  z-index: 20;
+}
+
+.containerLoading {
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  width: 112px;
+  height: 112px;
+  animation: rotation 3s ease-in-out infinite;
+  margin-bottom: 90px;
+}
+
+.box1, .box2 {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}
+
+.box1 {
+  position: absolute;
+  border: 10px solid #DF9F1F;
+  margin: 64px 0 0 64px;
+}
+
+.box2 {
+  position: absolute;
+  border: 10px solid #DAF3FF;
+  margin: 0;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateZ(45deg);
+  }
+  to {
+    transform: rotateZ(405deg);
+  }
+}
+@media screen and (min-width: 551px) and (max-width: 950px) {
+  .containerLoading {
+    width: 95px;
+    height: 95px;
+    margin-bottom: 60px;
+  }
+
+  .loaderWrapper {
+    font-size: 18px;
+  }
+
+  .box1, .box2 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .box1 {
+    margin: 55px 0 0 55px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .containerLoading {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 40px;
+  }
+
+  .loaderWrapper {
+    font-size: 15px;
+  }
+
+  .box1, .box2 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .box1 {
+    margin: 40px 0 0 40px;
+  }
+}
+
+/*# sourceMappingURL=loadingPage.css.map */

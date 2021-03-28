@@ -1,0 +1,71 @@
+header .textContainer {
+  padding: 0 40px;
+}
+header .textContainer h1 {
+  font-size: 40px;
+}
+header .textContainer .description {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+main {
+  padding: 90px 40px;
+  clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+}
+main h2 {
+  font-size: 40px;
+}
+main .line {
+  margin-bottom: 40px;
+}
+main .line .firstLine {
+  width: 25%;
+  height: auto;
+}
+main .line .secondLine {
+  width: 12%;
+  height: auto;
+}
+main .newsContent h3 {
+  font-size: 25px;
+}
+main .newsContent .cardContainer {
+  margin: 20px 0 40px 0;
+}
+main .newsContent .cardContainer .card {
+  width: 33.33%;
+  height: 550px;
+}
+main .newsContent .cardContainer .card .title {
+  padding: 18px 20px 30px 20px;
+  font-size: 19px;
+}
+main .newsContent .cardContainer .card .contentCourses {
+  padding: 18px 20px;
+  font-size: 16px;
+}
+main .newsContent .cardContainer .card .contentCourses li {
+  margin-bottom: 8px;
+}
+
+footer {
+  padding: 50px 40px 100px 40px;
+}
+footer h1 {
+  font-size: 40px;
+}
+footer .line .firstLine {
+  width: 25%;
+  height: auto;
+}
+footer .line .secondLine {
+  width: 12%;
+  height: auto;
+}
+footer .icon img {
+  width: 50px;
+  height: auto;
+}
+
+/*# sourceMappingURL=homeStyleLaptop.css.map */

@@ -1,0 +1,18 @@
+// Left, right, top, bottom padding for the web page container according to the used devices
+// LR for left right padding
+// TB for top bottom padding
+
+$LRdesktop: 50px;
+$TBdesktop: 30px;
+
+$LRlaptop: 40px;
+$TBlaptop: 15px;
+
+$LRtablet: 35px;
+
+$LRmobile: 15px;
+
+$LRsmallMobile: 8px;
+
+$revealTitle: 50px;
+$revealTitleMobile: 30px;

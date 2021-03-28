@@ -1,0 +1,26 @@
+.container {
+  padding: 15px 35px;
+}
+.container .card {
+  width: 400px;
+  height: 460px;
+  margin: 10px;
+}
+.container .card .title {
+  padding: 16px;
+}
+.container .card .title a {
+  font-size: 22px;
+}
+.container .card .content {
+  padding: 16px;
+}
+.container .card .content .contentList .contentItem {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.container .card .content .readMore {
+  padding: 10px 22px;
+}
+
+/*# sourceMappingURL=cardStyleTablet.css.map */

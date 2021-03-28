@@ -1,0 +1,85 @@
+@use "../variable/colors";
+@use "../variable/mixins";
+
+.loaderWrapper {
+    @include mixins.flex(column, center, center);
+    @include mixins.widthAndHeight(100%, 100%);
+    background-color: colors.$darkBlue;
+    position: fixed;
+    top:0;
+    left: 0;
+    color: white;
+    font-size: 25px;
+    z-index: 20;
+}
+
+.containerLoading {
+    @include mixins.transform(rotateZ(45deg));
+    @include mixins.widthAndHeight(112px, 112px);
+    animation: rotation 3s ease-in-out infinite;
+    margin-bottom: 90px;
+}
+
+.box1, .box2 {
+    @include mixins.widthAndHeight(48px, 48px);
+    position: absolute;
+}
+
+.box1 {
+    position: absolute;
+    border: 10px solid colors.$orange;
+    margin: 64px 0 0 64px;
+}
+
+.box2 {
+    position: absolute;
+    border: 10px solid colors.$lightBlue;
+    margin: 0;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateZ(45deg);
+    }
+    to {
+        transform: rotateZ(405deg);
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 950px) {
+    .containerLoading {
+        @include mixins.widthAndHeight(95px, 95px);
+        margin-bottom: 60px;
+    }
+
+    .loaderWrapper {
+        font-size: 18px;
+    }
+
+    .box1, .box2 {
+        @include mixins.widthAndHeight(40px, 40px);
+    }
+    
+    .box1 {
+        margin: 55px 0 0 55px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .containerLoading {
+        @include mixins.widthAndHeight(70px, 70px);
+        margin-bottom: 40px;
+    }
+
+    .loaderWrapper {
+        font-size: 15px;
+    }
+
+    .box1, .box2 {
+        @include mixins.widthAndHeight(30px, 30px);
+    }
+    
+    .box1 {
+        margin: 40px 0 0 40px;
+    }
+}

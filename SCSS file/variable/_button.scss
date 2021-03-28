@@ -1,0 +1,35 @@
+@use "colors";
+@use "mixins";
+
+// Left, right, top, bottom padding for the card according to the used devices
+// LR for left right padding
+// TB for top bottom padding
+
+$LRdesktop: 22px;
+$TBdesktop: 10px;
+
+$LRtablet: 18px;
+$TBtablet: 8px;
+
+$LRsmallMobile: 20px;
+$TBsmallMobile: 5px;
+
+
+
+@mixin whiteButton($TBpadding, $LRpadding, $color, $hoverColor) {
+    @include mixins.borderRadius(30px);
+    @include mixins.transition(all, 0.4s, ease);
+    background-color: transparent;
+    border: 2px solid $color;
+    color: $color;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: $TBpadding $LRpadding;
+    margin: 0 auto;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $color;
+        color: $hoverColor;
+    }
+}

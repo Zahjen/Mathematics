@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="31"
+   height="31"
+   viewBox="0 0 8.2020831 8.2020831"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#001428"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="14.621386"
+     inkscape:cy="23.346731"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1685"
+     inkscape:window-height="773"
+     inkscape:window-x="2062"
+     inkscape:window-y="89"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1019">
+      <path
+         id="path833"
+         style="fill:none;stroke:#df9f1f;stroke-width:0.365968;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 7.8868079,4.1010418 A 3.7857661,3.7857661 0 0 1 4.1010418,7.8868079 3.7857661,3.7857661 0 0 1 0.31527567,4.1010418 3.7857661,3.7857661 0 0 1 4.1010418,0.31527567 3.7857661,3.7857661 0 0 1 7.8868079,4.1010418 Z" />
+      <g
+         aria-label="M"
+         transform="scale(0.87083724,1.1483202)"
+         id="text837"
+         style="font-size:5.04982px;line-height:1.25;font-family:'URW Gothic';-inkscape-font-specification:'URW Gothic, Normal';text-align:end;text-anchor:end;stroke-width:0.210408">
+        <path
+           d="M 2.7726997,5.437253 H 3.1463864 V 2.1144715 L 4.5451865,5.437253 H 4.868375 L 6.272225,2.1144715 V 5.437253 H 6.6459116 V 1.7054361 H 6.0651823 L 4.7118306,4.8817728 3.353429,1.7054361 H 2.7726997 Z"
+           style="fill:#df9f1f;fill-opacity:1;stroke-width:0.210408"
+           id="path1013" />
+      </g>
+    </g>
+  </g>
+</svg>

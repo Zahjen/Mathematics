@@ -1,0 +1,153 @@
+@use "../variable/colors";
+@use "../variable/padding";
+@use "../variable/mixins";
+
+
+footer {
+    @include mixins.widthAndHeight(100%, 100%);
+    @include mixins.flex(column, center, center);
+    background-color: white;
+    margin-top: 120px;
+    padding: 50px padding.$LRdesktop 100px padding.$LRdesktop;
+
+    h1 {
+        font-size: 50px;
+        color: colors.$darkBlue;
+        margin-bottom: 5px;
+    }
+
+    .line {
+        @include mixins.widthAndHeight(100%, auto);
+        @include mixins.flex(column, flex-start, center);
+        margin-bottom: 80px;
+    
+        .firstLine {
+            @include mixins.widthAndHeight(20%, auto);
+            border: 1px solid colors.$turquoise;
+            margin-bottom: 10px;
+        }
+    
+        .secondLine {
+            @include mixins.widthAndHeight(10%, auto);
+            border: 1px solid colors.$turquoise;
+        }
+    }
+
+    .icon {
+        @include mixins.widthAndHeight(400px, auto);
+        @include mixins.flex(row, space-between, center);
+
+        img {
+            @include mixins.widthAndHeight(60px, auto);
+        }
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+    footer {
+        padding: 50px padding.$LRtablet 90px padding.$LRtablet;
+    
+        h1 {
+            font-size: 35px;
+        }
+    
+        .line {
+            margin-bottom: 70px;
+    
+            .firstLine {
+                @include mixins.widthAndHeight(30%, auto);
+            }
+        }
+    
+        .icon {
+            @include mixins.widthAndHeight(300px, auto);
+    
+            img {
+                @include mixins.widthAndHeight(50px, auto);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 900px) {
+    footer {
+        padding: 50px padding.$LRtablet 90px padding.$LRtablet;
+    
+        h1 {
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+    
+        .line {
+            margin-bottom: 60px;
+    
+            .firstLine {
+                @include mixins.widthAndHeight(30%, auto);
+            }
+        }
+    
+        .icon {
+            @include mixins.widthAndHeight(300px, auto);
+    
+            img {
+                @include mixins.widthAndHeight(50px, auto);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 550px) {
+    footer {
+        padding: 50px padding.$LRmobile 80px padding.$LRmobile;
+
+        h1 {
+            font-size: 27px;
+            margin-bottom: 0;
+        }
+
+        .line {
+            margin-bottom: 40px;
+
+            .firstLine {
+                @include mixins.widthAndHeight(30%, auto);
+                margin-bottom: 8px;
+            }
+        }
+
+        .icon {
+            @include mixins.widthAndHeight(200px, auto);
+
+            img {
+                @include mixins.widthAndHeight(35px, auto);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    footer {
+        padding: 40px padding.$LRsmallMobile 60px padding.$LRsmallMobile;
+    
+        h1 {
+            font-size: 23px;
+            margin-bottom: 0;
+        }
+    
+        .line {
+            margin-bottom: 40px;
+    
+            .firstLine {
+                @include mixins.widthAndHeight(30%, auto);
+                margin-bottom: 8px;
+            }
+        }
+    
+        .icon {
+            @include mixins.widthAndHeight(150px, auto);
+    
+            img {
+                @include mixins.widthAndHeight(30px, auto);
+            }
+        }
+    }
+}

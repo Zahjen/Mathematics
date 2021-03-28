@@ -1,0 +1,55 @@
+@use "../variable/padding";
+@use "../variable/mixins";
+
+main {
+    padding: padding.$TBlaptop padding.$LRmobile;
+    line-height: 2;
+    font-size: 13px;
+
+    h1 {
+        font-size: 31px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    .Theorie {
+        @include mixins.borderRadius(20px);
+        padding: 18px 12px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .itemEncadrement {
+        margin: 0 5px;
+    }
+
+    .displayPart {
+        .material-icons {
+            font-size: 35px;
+        }
+    }
+
+    .minipage {
+        margin: 25px 0;
+
+        .var1 {
+            width: 295px;
+        }
+    }
+}

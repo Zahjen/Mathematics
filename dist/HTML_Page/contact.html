@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" type="text/css" href="../Common_style_to_all_Pages/loadingPage.css"/>
+    <link rel="stylesheet" type="text/css" href="../Common_style_to_all_Pages/navBar.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 901px) and (max-width: 1300px)" href="../Common_style_to_all_Pages/navBarLaptop.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 900px)" href="../Common_style_to_all_Pages/navBarMobile.css"/>
+
+    <link rel="stylesheet" type="text/css" href="../Style_Navbar_Page/Contact_Style/constactStyle.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 901px) and (max-width: 1300px)" href="../Style_Navbar_Page/Contact_Style/contactStyleLaptop.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 551px) and (max-width: 900px)" href="../Style_Navbar_Page/Contact_Style/contactStyleTablet.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 550px)" href="../Style_Navbar_Page/Contact_Style/contactStyleMobile.css"/>
+
+    <title>Contact - Mathématiques</title>
+</head>
+
+<body>
+
+<div class="loaderWrapper">
+    <div class="containerLoading">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="loading">Chargement ...</div>
+</div>
+
+<nav>  
+    <div class="logo">
+        <img class="logoOrange" type="image/svg+xml" src="../Images/General/logo.svg"/>
+        <img class="logoBleu" type="image/svg+xml" src="../Images/General/logoContact.svg"/>
+        <div class="completeLogo">
+            ATHÉMATIQUE
+        </div>
+    </div>
+
+    <input type="checkbox" id="navCheck">
+    <div class="navButton">
+        <label for="navCheck">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </label>
+    </div>
+    
+    <div class="navLinks">
+        <a href="../../index.html" class="compNavBar"> Accueil </a>
+        <a href="method.html" class="compNavBar"> Méthodes </a>
+        <a href="tricks.html" class="compNavBar"> Astuces </a>
+        <a href="practice.html" class="compNavBar"> Exercices </a>
+        <a href="contact.html" class="compNavBar mobileSpace" id="currentLink"> Contact </a>
+    </div>
+</nav>   
+
+<main>
+    <div class="container">
+        <section class="socialNetwork">
+            <h1>Restons en contact ! </h1>
+            <div class="touch">
+                <div class="adress">
+                    <i class="material-icons">place</i>
+                    <div class="text">12 Lorem Ipsum dolor sit, FR 3456</div>
+                </div>
+                <div class="email">
+                    <i class="material-icons">email</i>
+                    <div class="text">lorem@ipsum.sit</div>
+                </div>
+            </div>
+            
+            <div class="icon">
+                <h2>Soyons connectés !</h2>
+                <div class="image">
+                    <img class="logoOrange" type="image/svg+xml" src="../Images/General/fb.svg"/>
+                    <img class="logoOrange" type="image/svg+xml" src="../Images/General/twitter.svg"/>
+                    <img class="logoOrange" type="image/svg+xml" src="../Images/General/insta.svg"/>
+                    <img class="logoOrange" type="image/svg+xml" src="../Images/General/linkedin.svg"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="contactForm">
+            <h1>
+                N'attendez plus, contactez - nous !
+            </h1>
+            <form action="#">
+                <div class="ident">
+                    <div class="col nom">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="user_name" placeholder="Entrez votre nom...">
+                    </div>
+                    <div class="col">
+                        <label for="firstName">Prénom</label>
+                        <input type="text" id="firstName" name="user_firstName" placeholder="Entrez votre prénom...">
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" name="user_mail" placeholder="Entrez votre adresse e-mail...">
+                </div>
+                <div class="col">
+                    <label for="msg">Votre message :</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <button class="submit">
+                    Envoyer
+                </button>
+            </form>
+        </section>
+    </div>
+
+</main>
+
+<script type="application/javascript" src="../JavaScript/loadingPage.js"></script>
+<script type="application/javascript" src="../JavaScript/contact.js"></script>
+</body>
+</html>

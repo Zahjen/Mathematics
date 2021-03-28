@@ -1,0 +1,53 @@
+@mixin initialization {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex($direction, $justifyContent, $alignItem) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItem;
+}
+
+@mixin widthAndHeight($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin borderRadius($borderRadius) {
+    border-radius: $borderRadius;
+    -webkit-border-radius: $borderRadius;
+    -moz-border-radius: $borderRadius;
+    -ms-border-radius: $borderRadius;
+    -o-border-radius: $borderRadius;
+}
+
+@mixin transition($content, $time, $wayItGoes) {
+    transition: $content $time $wayItGoes;
+    -webkit-transition: $content $time $wayItGoes;
+    -moz-transition: $content $time $wayItGoes;
+    -ms-transition: $content $time $wayItGoes;
+    -o-transition: $content $time $wayItGoes;
+}
+
+@mixin transform($transform) {
+    transform: $transform;
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+}
+
+@mixin hyphen($hyphen) {
+    hyphens: $hyphen;
+    -webkit-hyphens: $hyphen;
+    -moz-hyphens: $hyphen;
+    -ms-hyphens: $hyphen;
+}
+
+@mixin listStyle($listStyleType, $listPosition, $spaceBetweenItem) {
+    list-style-type: $listStyleType;
+    list-style-position: $listPosition;
+    margin-top: $spaceBetweenItem;
+}

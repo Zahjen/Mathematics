@@ -1,0 +1,93 @@
+main {
+  color: #CACDD2;
+  padding: 30px 50px;
+  line-height: 2.3;
+  font-size: 22px;
+}
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  color: #DAF3FF;
+  text-align: left;
+  pointer-events: none;
+}
+main hr {
+  border-color: #DF9F1F;
+}
+main h1 {
+  font-size: 60px;
+}
+main h2 {
+  font-size: 40px;
+}
+main h3 {
+  font-size: 35px;
+}
+main h4 {
+  font-size: 27px;
+}
+main .displayPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .displayPart .material-icons {
+  color: #DAF3FF;
+  pointer-events: none;
+  font-size: 60px;
+}
+main .displayPart .down {
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+main .minipage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+main .minipage figcaption {
+  text-align: center;
+}
+main .listDecimalType {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin-top: 25px;
+}
+main .listLowerRomType {
+  list-style-type: lower-roman;
+  list-style-position: inside;
+  margin-top: 20px;
+}
+main .Theorie {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: #334353;
+  border: none;
+  padding: 40px 50px 60px 40px;
+}
+main .itemEncadrement {
+  border: solid #DAF3FF 1px;
+  margin: 0 15px;
+}
+main .underlineAnchor {
+  color: #DF9F1F;
+  text-decoration: underline;
+}
+main .desktop {
+  display: block;
+}
+main .mobile {
+  display: none;
+}
+
+/*# sourceMappingURL=commonArticles.css.map */

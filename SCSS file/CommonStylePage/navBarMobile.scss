@@ -1,0 +1,105 @@
+@use "../variable/colors";
+@use "../variable/navPadding";
+@use "../variable/padding";
+@use "../variable/mixins";
+
+body {
+    overflow-x: hidden;
+}
+/* Properties of the nav bar */
+nav {
+    @include mixins.widthAndHeight(100%, 50px);
+    @include mixins.flex(row, space-between, center);
+    padding: 0 padding.$LRmobile 0 0;
+    
+    .logo {
+        @include mixins.flex(row, flex-start, center);
+        font-size: 17px;
+        margin-left: padding.$LRmobile;
+        
+        img {
+            @include mixins.widthAndHeight(25px, auto);
+        }
+
+        i.material-icons {
+            margin-right: 20px;
+            color: colors.$lightBlue;
+        }
+    }    
+
+    /* Reveal the nav button */
+    .navButton {
+        display: inline-block;
+
+        /* Place line logo under each other */
+        label {
+            @include mixins.flex(column, space-around, center);
+
+            /* Dimension of the button and duration of the animation from line to cross */
+            div {
+                @include mixins.transition(all, 0.3s, ease-in);
+                margin: 3px;
+
+                &:nth-child(1) {
+                    @include mixins.widthAndHeight(25px, 2px);
+                    background: linear-gradient(to right, colors.$orange 50%, transparent 10.01%);
+                }
+                &:nth-child(2) {
+                    @include mixins.widthAndHeight(25px, 2px);
+                    background-color: colors.$lightBlue;
+                }
+                &:nth-child(3) {
+                    @include mixins.widthAndHeight(25px, 2px);
+                    background: linear-gradient(to left, colors.$orange 50%, transparent 10.01%);
+                }
+            }
+        }
+    }
+
+    /* Design of the button */ 
+    #navCheck:checked {
+        ~ .navButton > label > .line1 {
+            @include mixins.transform(translateY(8px) rotate(45deg));
+            background-color: colors.$orange;
+            transform-origin: center;
+        }
+        ~ .navButton > label > .line2 {
+            opacity: 0;
+        }
+        ~ .navButton > label > .line3 {
+            @include mixins.transform(translateY(-8px) rotate(-45deg));
+            background-color: colors.$orange;
+            transform-origin: center;
+        }
+        ~ .navLinks {
+            height: calc(100vh - 50px);
+        }
+    }
+
+    .navLinks {
+        @include mixins.flex(column, space-around, center);
+        @include mixins.widthAndHeight(100%, 0px);
+        @include mixins.transition(all, 0.3s, ease-in);
+        background-color: colors.$darkBlue;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+
+        a {
+            @include mixins.widthAndHeight(100%, auto);
+            @include mixins.flex(row, center, center);
+            margin-right: 0;
+            font-size: 18px;
+
+            &:hover {
+                background-size: 0% 0%;
+            }
+        }
+
+        .mobileSpace {
+            margin-bottom: 100px;
+        }
+    }
+}

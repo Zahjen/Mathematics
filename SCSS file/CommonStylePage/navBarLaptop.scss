@@ -1,0 +1,30 @@
+@use "../variable/colors";
+@use "../variable/navPadding";
+@use "../variable/padding";
+@use "../variable/mixins";
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    padding: navPadding.$TPlaptop 0;
+    font-size: 20px;
+
+    .logo {
+        font-size: 18px;
+        margin-left: padding.$LRlaptop;
+
+        .material-icons {
+            margin-right: 30px;
+            color: colors.$lightBlue;
+        }
+    }
+
+    .navLinks {
+
+        a {
+            margin-right: padding.$LRlaptop;
+        }
+    }
+}
