@@ -6,3 +6,4 @@ We had to create a website from scratch about a topic of our choice. We can choo
 Note that this website is just the frontend part, there is no backend part.
 
 Want to see how does it look ? [Take a look right there!](https://zahjen.github.io/Mathematics/)
+$$\int_0^\infty$$
