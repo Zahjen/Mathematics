@@ -7,4 +7,4 @@ Note that this website is just the frontend part, there is no backend part.
 
 Want to see how does it look ? [Take a look right there!](https://zahjen.github.io/Mathematics/)
 
-$$\int_0^\infty$$
+$$n! = n\times (n-1) \times (n-2) \times \dots \times 1$$
